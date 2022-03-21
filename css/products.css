@@ -1,0 +1,98 @@
+.productBody {
+  padding: 100px;
+  background-color: #ffde99;
+}
+
+.videoBox{
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.productBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #4c3009;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 60px;
+}
+.productBoxLPA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #36454F;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 60px;
+}
+.productBoxIPA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #800000;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 60px;
+}
+.productBoxSUM {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ff8243;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 60px;
+}
+
+.bottleL {
+
+}
+
+#bottlePic {
+  width: 300px; /* width of container */
+   height: 500px; /* height of container */
+   object-fit: cover;
+   object-position: 55% 20%; /* try 20px 10px */
+
+}
+
+.bottleR {
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.bottletxt{
+  color: #ffde99;
+}
+.para{
+  color: #ffde99;
+  font-size: 16px;
+}
+
+.bottleButt{
+  display: flex;
+  justify-content: center;
+}
+
+.buttonX {
+  background-color: #fdb99a;
+  border: none;
+  color: #2F455C;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  width: 70px;
+
+  border-radius: 15px;
+
+}
+
+.buttonX:hover {
+	background-color: #FD864E;
+	box-shadow: 0 0 5px 0 #999;
+}

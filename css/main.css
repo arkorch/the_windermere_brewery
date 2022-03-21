@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'bud_boldregular';
+    src: url('../fonts/bud_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bud_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.hidden{
+	display: none;
+}
+
+img, embed, object, video
+{
+  max-width: 100%;
+}
+
+html
+{
+  box-sizing: border-box;
+}
+
+
+/* General rules for elements */
+html{
+  background: rgb(255,242,215);
+background: radial-gradient(circle, rgba(255,242,215,1) 0%, rgba(255,222,153,1) 65%, rgba(189,146,58,0.9867297260701156) 93%);
+}
+body{
+  font-family: 'bud_boldregular',Arial, serif;
+  font-size: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#homePageContainer,#aboutPageContainer,#productsPageContainer,#galleryPageContainer,#contactPageContainer{
+    background: linear-gradient(90deg, rgba(255,242,215,1) 0%, rgba(203,163,80,1) 47%, rgba(98,66,0,1) 100%) no-repeat;
+
+}
+a{
+  text-decoration: none;
+  transition: all .1s linear;
+}
+
+
+
+/* mobile first, css start at width375px for mobile*/
+/*----------for general header ----------*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+	background-color: #ffde99;
+  border-bottom: solid 5px #4c3009 ;
+}
+a{
+    text-decoration: none;
+}
+/*------------ header end-------- */
+
+
+/* ---------Basic Header Properties----------*/
+.logo{
+	margin: 0 auto;
+  height: 120px;
+}
+ .headerLogo {
+   height: 120px
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height:3rem ;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #4c3009;
+    text-decoration: none;
+    font-size: 16px;
+}
+.currentPage{
+	background-color: #C4B26A;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+
+/*----hover effect navigation--------*/
+.hoverSelected {
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.hoverSelected:before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background: ###C9B76D;
+	transition: all .3s;
+}
+.hoverSelected:hover:before{
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+/*---------- nav hover end ----------*/
+
+/*--------Hamburrger Menu Start----- */
+.hamburgerMenu {
+    display: none;
+}
+
+.hamburgerMenu div {
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 50vh;
+        top: 1rem;
+        background-color:#CCB27A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+/*---------- ALL FOOTER PROPERTIES----- */
+
+#mainFooter
+{
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+  padding: 30px 90px 30px 90px;
+	flex-direction: row;
+  background-color: #ffde99;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  #mainFooter {
+    padding: 15px 8px 15px 8px;
+  }
+  .footerLogo img{
+      width: 80px;
+  }
+  .footerNav-2{
+    margin: auto 10px 0 10px;
+  }
+
+  .footerNav-3{
+      margin: auto 10px 0 10px;
+  }
+
+}
+
+
+.footerNav-2{
+  margin: auto 30px 0 30px;
+}
+
+.footerNav-3{
+    margin: auto 30px 0 30px;
+}
+.footerLogo{
+    margin: auto;
+}
+.footerLogo img{
+    width: 150px;
+}
+
+.social{
+    margin:60px 10px 0px auto;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.socialMedia ul li{
+    list-style: none;
+	display: inline-block;
+    margin-left: 13px;
+    width: 25px;
+    height: 25px;
+}
+
+}
+/* ------------footer end------------ */
+
+.videoBox1 {
+margin-left: 200px;
+}

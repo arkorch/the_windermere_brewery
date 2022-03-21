@@ -1,0 +1,158 @@
+.siteContainer {
+  background-color: #ffde99 ;
+  padding: 50px 50px 50px 50px;
+}
+
+article
+{
+	color: #24292f;
+	font-size: 16px;
+	margin: 0 20px 60px 20px;
+	line-height: 38px;
+	letter-spacing: 1px;
+}
+
+#teamText, #historyText, #communityText
+{
+	display: none;
+  margin-top: 30px;
+}
+
+#storySection
+{
+	margin: 0;
+}
+
+#teamImg
+{
+	display: none;
+}
+
+#teamTitle
+{
+	min-width: 320px;
+	height: 270px;
+	background: url('../images/about/storypic.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#ourTeam p
+{
+	text-align: center;
+	color: #eee8e1;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: -50px;
+}
+
+#windexTodayHead
+{
+	min-width: 320px;
+	height: 270px;
+	background: url('../images/about/oldbrew.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin-top: 15px;
+}
+
+#history p
+{
+	text-align: center;
+	color: #eee8e1;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: -50px;
+}
+
+#historyImg
+{
+	display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+	article
+	{
+		margin: 0 100px 100px 100px;
+	}
+
+	#storySection
+	{
+
+	}
+
+	#ourTeam
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 3%;
+	}
+
+	#teamTitle
+	{
+		width: 640px;
+		background: url('../images/about/storypic.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+		cursor: pointer;
+    background-size: cover;
+	}
+
+	#teamImg
+	{
+		display: block;
+		width: 300px;
+		height: 270px;
+		background: url('../images/about/barnes.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+		margin-left: 5%;
+	}
+
+	#history
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 30px 30px 0px 30px;
+	}
+
+	#windexTodayHead
+	{
+		width: 640px;
+		background: url('../images/about/oldbrew.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+		cursor: pointer;
+	}
+
+	#historyImg
+	{
+		display: block;
+		width: 300px;
+		height: 270px;
+		background: url('../images/about/founder.jpg') no-repeat;
+    margin-top: 15px;
+    background-position: center;
+    background-size: cover;
+		margin-right: 5%;
+	}
+
+
+
+}
+
+@media screen and (min-width: 981px) {
+	#storySection
+	{
+		padding: 50px 80px 0px 80px;
+	}
+}

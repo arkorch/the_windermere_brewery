@@ -1,0 +1,68 @@
+#bodyContainer{
+  background-color: #ffde99;
+  padding: 40px 70px 0 70px;
+}
+
+.pageHeading {
+  display: flex;
+  justify-content: center;
+
+}
+
+#advHero{
+
+}
+
+#bodyContainer img
+{
+	margin-top: 20px;
+	margin-bottom:20px;
+	margin-left: 50px;
+	margin-right: 10px;
+}
+
+
+#bodyContainer img:hover
+   {
+
+   	border-radius: 10%;
+   	-webkit-border-radius:10%;
+   	box-shadow: 0px 0px 40px #B89565;
+   	transform: rotate(360deg);
+   	-webkit-transform:rotate(360deg);
+
+	}
+
+#advHero2 img
+{
+	width: 500px;
+	height: 400px;
+	margin-top: 30px;
+	margin-bottom:30px;
+	margin-left: 40px;
+	margin-right: 20px;
+
+}
+
+
+#advHero2 img:hover
+   {
+
+   	border-radius: 10%;
+   	-webkit-border-radius:10%;
+   	box-shadow: 0px 0px 40px #C4C4C4;
+   	transform: rotate(360deg);
+   	-webkit-transform:rotate(360deg);
+
+	}
+
+	#advHero header h2
+{
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 3px;
+	color:#2F4C3C;
+	font-size: 50px;
+	font-weight: 700;
+
+}

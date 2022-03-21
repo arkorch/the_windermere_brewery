@@ -1,0 +1,45 @@
+#Herotext h2
+	{
+		font-size: 30px;
+		margin-right: 80px;
+		margin-left: 80px;
+	}
+
+	#Herotext p
+	{
+		width: 700px;
+	}
+
+
+  @media screen and (min-resolution: 200dpi),
+         screen and (min-resolution: 1.25dppx){
+
+  #Herotext
+  	{
+  		background-image: url(../images/home/heroImage.jpg);
+  		background-size: cover;
+  		height: 650px;
+
+  	}
+  }
+
+  #Herotext h2
+  {
+  	font-size: 20px;
+  	font-weight: 700;
+  	color: #fff;
+  	text-align: center;
+  	margin-bottom: 40px;
+    margin-top: 0;
+  	padding-top: 70px;
+  }
+
+  #Herotext p
+  {
+  	font-size: 15px;
+  	color: #fff;
+  	line-height: 20px;
+  	margin: 0 auto 0 auto;
+      text-align: left;
+  }
+}
